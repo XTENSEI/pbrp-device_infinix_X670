@@ -22,13 +22,13 @@ This repository contains the device tree for building TWRP (Team Win Recovery Pr
    ```bash
    repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
    ```
-3. Clone this device tree into your source:
-   ```bash
-   git clone https://github.com/rdndds/recovery-device_infinix_X670 device/infinix/X670
-   ```
-4. Sync the source:
+3. Sync the source:
    ```bash
    repo sync -j$(nproc --all) --force-sync
+   ```
+4. Clone this device tree into your source:
+   ```bash
+   git clone https://github.com/rdndds/recovery-device_infinix_X670 device/infinix/X670
    ```
 5. Build TWRP:
    ```bash
