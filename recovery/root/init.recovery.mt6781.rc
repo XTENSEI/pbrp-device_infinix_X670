@@ -1,0 +1,11 @@
+import /mtk-plpath-utils.rc
+
+on init
+    export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw 
+
+on fs
+    install_keyring
+
+on boot
+    start boot-hal-1-2
+    start health-hal-2-1
