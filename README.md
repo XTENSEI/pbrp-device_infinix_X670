@@ -1,4 +1,4 @@
-# TWRP Device Tree for Infinix NOTE 12 (X670)
+# PBRP Device Tree for Infinix NOTE 12 (X670)
 
 This repository contains the device tree for building TWRP (Team Win Recovery Project) for the Infinix NOTE 12 (X670) device.
 
@@ -20,7 +20,7 @@ This repository contains the device tree for building TWRP (Team Win Recovery Pr
 1. Set up the Android build environment
 2. Initialize the TWRP source:
    ```bash
-   repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
+   repo init --depth=1 https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-12.1
    ```
 3. Sync the source:
    ```bash
@@ -28,13 +28,14 @@ This repository contains the device tree for building TWRP (Team Win Recovery Pr
    ```
 4. Clone this device tree into your source:
    ```bash
-   git clone https://github.com/rdndds/recovery-device_infinix_X670 device/infinix/X670
+   git clone https://github.com/XTENSEI/pbrp-device_infinix_X670 device/infinix/X670
    ```
 5. Build TWRP:
    ```bash
    source build/envsetup.sh
-   lunch twrp_X670-eng
+   lunch pb_X670-userdebug
    mka bootimage
+   m pbrp
    ```
 
 ## Warnings
